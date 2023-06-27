@@ -3,7 +3,8 @@ namespace app.evaluator;
 using {managed} from '@sap/cds/common';
 
 entity Season : managed {
-    key id            : Integer;
+    key id            : UUID;
+    description: String(1000);
         start_date    : Date;
         end_date      : Date;
         season_number : Integer;
@@ -69,11 +70,10 @@ entity Signature : managed {
 
 
 entity User : managed {
-    key id_number  : String(20); 
-        name       : String(100); 
-        last_name  : String(100); 
-        role       : String(100); 
-        department : String(200); 
+    key id_number  : Integer; 
+        name       : String(50); 
+        role       : String(30); 
+        department : String(30); 
 }
 
 annotate User with @UI.LineItem: [
