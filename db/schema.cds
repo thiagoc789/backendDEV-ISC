@@ -75,3 +75,45 @@ entity User : managed {
         role       : String(100); 
         department : String(200); 
 }
+
+annotate User with @UI.LineItem: [
+
+    {
+
+        $Type: 'UI.DataField',
+        Label: 'Identificación',
+        Value: id_number
+
+    },
+    {
+
+        $Type: 'UI.DataField',
+        Label: 'Nombre',
+        Value: name
+
+    },
+    {
+
+        $Type: 'UI.DataField',
+        Label: 'Departamento',
+        Value: department
+
+    },
+    {
+
+        $Type: 'UI.DataField',
+        Label: 'Rol',
+        Value: role
+
+    }
+
+];
+
+annotate User with @UI.SelectionFields: [
+
+    id_number,
+    name,
+    role,
+    department
+
+];
