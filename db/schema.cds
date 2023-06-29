@@ -117,3 +117,47 @@ annotate User with @UI.SelectionFields: [
     department
 
 ];
+
+
+annotate Evaluation with @UI.LineItem: [
+
+        {
+
+        $Type: 'UI.DataField',
+        Label: 'Id Evaluación',
+        Value: id
+
+    },
+    {
+
+        $Type: 'UI.DataField',
+        Label: 'Nombre',
+        Value: name
+
+    },
+    {
+
+        $Type: 'UI.DataField',
+        Label: 'Descripción',
+        Value: description
+
+    },
+    {
+
+        $Type: 'UI.DataField',
+        Label: 'Peso',
+        Value: weight
+
+    }
+
+];
+
+annotate Evaluation with @UI.SelectionFields: [
+
+    
+    name,
+    weight
+
+];
+
+
