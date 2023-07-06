@@ -8,4 +8,6 @@ service MyEvaluationsService {
     entity Attendances      as projection on my.Attendance;
     entity User             as projection on my.User;
     entity Signatures       as projection on my.Signature;
-}
+    entity Empleado as projection on my.Empleado;
+
+    }
